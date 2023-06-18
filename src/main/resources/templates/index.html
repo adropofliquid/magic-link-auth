@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link th:href="@{/resource/style/style.css}" rel="stylesheet" />
+</head>
+<body>
+<header>
+<!--    only authenticated users can see logout and View Profile buttons-->
+<!--    ${#authorization.expression('func') variable is provided by thymeleaf to access spring security features-->
+    <div th:if="${#authorization.expression('isAuthenticated()')}">
+        <a href="/logout" ><button class="sign-in_btn">Logout</button></a>
+    </div>
+</header>
+    <div class="container">
+        <div class="greetings" th:if="${#authorization.expression('isAnonymous()')}">
+            <h2>Welcome</h2>
+            <br>
+            <a href="/login" ><button class="sign-in_btn">Log in</button></a>
+            <br>
+            <br>
+            <a href="/register"> <button class="sign-in_btn">Register</button></a>
+        </div>
+
+        <div class="greetings" th:if="${#authorization.expression('isAuthenticated()')}">
+            <h2>You are logged in</h2>
+            <br>
+            <a href="/profile" ><button class="sign-in_btn">View Profile</button></a>
+            <br>
+        </div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Jun 18 23:55:26 BST 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0188-d0b8-6587-0000011282b0 
+on database directory C:\Users\DaMi\Downloads\magic-link-auth\database with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa 
+Loaded from file:/C:/Users/DaMi/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.6+9-LTS-190
+user.dir=C:\Users\DaMi\Downloads\magic-link-auth
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

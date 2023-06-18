@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>[SECURED] Profile Page</title>
+    <link th:href="@{/resource/style/style.css}" rel="stylesheet" />
+
+</head>
+
+<body>
+<header>
+        <a href="/logout" ><button class="sign-in_btn">Logout</button></a>
+</header>
+<div class="container">
+    <div class="greetings">
+<!-- component from https://uiverse.io/profile/alexmaracinaru-->
+        <div class="card">
+            <div class="card-border-top">
+            </div>
+            <div class="img">
+            </div>
+            <span th:text="${user.getName()}"></span>
+            <p class="job"><span th:text="${user.getEmail()}"></span></p>
+            <a href="/"><button>Go home</button></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
