@@ -35,7 +35,7 @@ this can be run using:
 cd jar
 java -jar magic-link-auth.jar
 ```
-However, the project can be built and run on <b>intellij</b> or with maven directly:
+Also, the project can be built and run on <b>intellij</b> or with maven directly:
 ```
 #using maven on command line
 mvn clean install -DskipTests
